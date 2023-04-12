@@ -51,6 +51,7 @@ export default function Register() {
         name,
         username,
       })
+      await router.push('/register/connect-calendar')
     } catch (error: any) {
       if (error.response.data.message) {
         alert(error.response.data.message)
